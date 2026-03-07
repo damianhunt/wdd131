@@ -30,6 +30,4 @@ document.getElementById('year').textContent = year;
 document.getElementById('currentdate').textContent = currentdate;
 
 //last modified date and time
-let d = new Date(document.lastModified)
-let date = `${d.getMonth()+1}/${d.getDate()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
-document.getElementById("lastModified").textContent = date
+document.getElementById("lastModified").innerHTML = document.lastModified;
