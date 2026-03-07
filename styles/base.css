@@ -54,7 +54,7 @@ main {
 }
 
 h1 {
-	grid-column: 1/4;
+	grid-column: 1/5;
     grid-row: 1;
 	text-align: center;
 }
@@ -83,7 +83,7 @@ h1 {
 	.family {
 	width: 150px;
     object-fit: cover;
-	padding-left: 20px;
+	padding: 20px;
 	grid-column: 1/1;
     grid-row: 2;
 	}
@@ -93,6 +93,7 @@ h1 {
 		padding: 0px;
 		grid-column: 2/3;
     	grid-row: 2;
+		margin-top: 20px;
 	}
 	h3 {
 	position: relative;
