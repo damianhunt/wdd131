@@ -1,46 +1,33 @@
-// select the DOM elements for output
-
-const worldfull = document.querySelector("#world-full");
-const short = document.querySelector("#short");
-const medium = document.querySelector("#medium");
-const year = document.querySelector("#year");
-const month = document.querySelector("#month");
-const day = document.querySelector("#day");
-const dayofweek = document.querySelector("#dayofweek");
-const full = document.querySelector("#full");
-
-// use the date object
-const today = new Date();
-
-full.innerHTML = `Today is <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
-worldfull.innerHTML = `UK: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-UK",
-	{
-		dateStyle: "full"
-	}
-).format(today)}</span>`;
-short.innerHTML = `Short: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "short"
-	}
-).format(today)}</span>`;
-medium.innerHTML = `Medium: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "medium"
-	}
-).format(today)}</span>`;
-
-year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
-month.innerHTML = `getMonth(): <span class="highlight">${today.getMonth()}</span>`;
-day.innerHTML = `getDate(): <span class="highlight">${today.getDate()}</span>`;
-dayofweek.innerHTML = `getDay(): <span class="highlight">${today.getDay()}</span>`;
+const daynames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+];
+const months = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"
+];
+const todaysdate = new Date();
+const dayName = daynames[todaysdate.getDay()];
+const monthName = months[todaysdate.getMonth()];
+const year = todaysdate.getFullYear();
+const currentdate = `${dayName},  ${todaysdate.getDate()} ${monthName} ${year}`;
+document.getElementById('year').textContent = year;
+document.getElementById('currentdate').textContent = currentdate;
 
 //last modified date and time
 let d = new Date(document.lastModified)
