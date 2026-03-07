@@ -29,5 +29,6 @@ const currentdate = `${dayName},  ${todaysdate.getDate()} ${monthName} ${year}`;
 document.getElementById('year').textContent = year;
 
 // Get the last modified date
-const date = new Date(document.lastModified);
+const d = new Date(document.lastModified);
+let date = `${d.getMonth()+1}/${d.getDate()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
 document.getElementById("lastModified").innerHTML = date;
