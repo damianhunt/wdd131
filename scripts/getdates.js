@@ -29,5 +29,13 @@ const currentdate = `${dayName},  ${todaysdate.getDate()} ${monthName} ${year}`;
 document.getElementById('year').textContent = year;
 document.getElementById('currentdate').textContent = currentdate;
 
-//last modified date and time
-document.getElementById("lastModified").innerHTML = document.lastModified;
+// Get the last modified date string
+    const lastModifString = document.lastModified;
+
+    // Convert the string to a more readable Date object
+    const lastModifDate = new Date(lastModifString);
+
+    // Format and display the date in the HTML element
+    if (lastModifString) {
+        document.getElementById('lastModified').innerHTML = lastModifDate.toLocaleDateString();
+    }
