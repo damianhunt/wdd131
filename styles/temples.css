@@ -1,0 +1,60 @@
+
+#page-title {
+	text-align: center;
+	background-color: rgb(0 110 182 / 1);
+	border: 1px solid rgb(0 0 0 / .2);
+	padding: 0.5rem;
+	color: #fff;
+}
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #333;
+	align-items: center;
+	margin: 0;
+	padding: 0px;
+	border: 1px solid rgb(0 0 0 / .2);
+}
+.navigation li {
+	flex: auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+
+.navigation a {
+	font-weight: 700;
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	background-color: rgb(0 110 182 / 1);
+}
+
+.temples section {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    margin: 5px auto;
+    box-shadow: 0px 0px 1px 3px #0A5198;
+    align-items: center;
+    height: 900px;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    margin: px auto;
+    padding: 10px;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+    

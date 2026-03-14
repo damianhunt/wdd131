@@ -1,0 +1,13 @@
+
+@media  screen and (min-width: 500px) {
+    
+    
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        align-items: center;
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px;
+    } 
+}
