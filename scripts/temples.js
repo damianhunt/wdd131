@@ -1,9 +1,8 @@
-// hamburger
-function toggleMenu() {
-    document.querySelector(".primaryNav").classList.toggle("open");
-    document.querySelector(".hamburgerBtn").classList.toggle("open");
 
-}
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
 
-const x = document.querySelector('.hamburgerBtn')
-x.onclick = toggleMenu;
+hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
+});

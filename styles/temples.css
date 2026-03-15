@@ -6,55 +6,104 @@
 	padding: 0.5rem;
 	color: #fff;
 }
-.navigation {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #333;
-	align-items: center;
-	margin: 0;
-	padding: 0px;
+
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #5b5b5b;
+	color: #fff;
+	text-align: center;
 	border: 1px solid rgb(0 0 0 / .2);
 }
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: #5b5b5b;
+	border: 1px solid rgb(0 0 0 / .2);
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+	padding: 0px;
+	
+}
+
 .navigation li {
-	flex: auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+	display: none;
 }
-
 .navigation a {
-	font-weight: 700;
 	display: block;
-	color: #eee;
 	padding: 0.75rem;
-	text-decoration: none;
 	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+	border: 1px solid rgb(0 0 0 / .2);
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation a:active {
+	color: white;
 	background-color: rgb(0 110 182 / 1);
 }
 
-.temples section {
-    flex-direction: column;
-    text-align: center;
-    width: 90%;
-    padding: 5px;
-    margin: 5px auto;
-    box-shadow: 0px 0px 1px 3px #0A5198;
-    align-items: center;
-    height: 900px;
+.show li {
+	display: block;
 }
 
-figure {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    align-items: center;
-    margin: px auto;
-    padding: 10px;
+#menu.show::before {
+	content: "X";
 }
+
+main {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0.5rem;
+}
+
+h1 {
+	text-align: center;
+	padding: 0.5rem;
+}
+
+
+
+
+.temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px;
+    }
+
 
 figure img {
     width: 100%;
-    object-fit: cover;
+    
     border-radius: 10px;
 }
+
+figcaption {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 1.2rem;
+}
     
+footer {
+  background-color: rgb(0 110 182 / 1);
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
