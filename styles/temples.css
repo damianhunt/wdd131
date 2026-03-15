@@ -95,6 +95,7 @@ h1 {
 
 
 figure img {
+	aspect-ratio: 600 / 450;
     width: 100%;
     border-radius: 10px;
 	max-width: 600px;
