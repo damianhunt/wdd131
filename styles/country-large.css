@@ -1,0 +1,132 @@
+@media  screen and (min-width: 500px) {
+
+  :root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    --primary-color: rgb(1, 95, 1); /* Global scope */
+    --secondary-color: rgb(202, 178, 45); /* Global scope */
+    --third-color: rgb(0, 16, 189); /* Global scope */
+    --fourth-color: rgb(189, 0, 0); /* Global scope */
+    --fith-color: black; /* Global scope */
+    text-align: center;
+    
+}
+
+  main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .hero{
+    grid-column: 1/5;
+    grid-row: 1/5;
+  }
+
+  .hero img{
+    
+    height: 100%;
+    object-fit: cover;  /* KEY PROPERTY: Options: cover, contain, fill */
+    object-position: center; /* Centers the image */
+  }
+
+
+  .data {
+	display: grid;
+  justify-content: space-around;
+	position: relative;
+  top: 10px;
+  left: 10px;
+	grid-column: 1/2;
+  grid-row: 1;
+	text-align: center;
+  border-radius: 10px;
+	border: 1px solid rgb(0 0 0 / .2);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+
+  /* Internal Layout (Icon next to H2) */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+	}
+
+  .data-title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Stretch across the whole weather box */
+    background-color: rgba(1, 95, 1, 0.7); /* Your green background */
+    padding: 10px;
+    border-radius: 10px; /* Rounds the top corners only */
+    color: white;
+}
+
+
+  .data h2 {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white; /* Added for contrast */
+    text-align: left;
+  }
+
+  .weather {
+    /* Positioning in the Main Grid */
+    grid-column: 4 / 5;
+    grid-row: 2;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+
+    /* Internal Layout (Icon next to H2) */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    
+    /* Visuals */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgb(0 0 0 / .2);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .weather-title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Stretch across the whole weather box */
+    background-color: rgba(1, 95, 1, 0.7); /* Your green background */
+    padding: 10px;
+    border-radius: 10px; /* Rounds the top corners only */
+    color: white;
+}
+  
+
+  .weather h2 {
+    background-color: none;
+    color: white; /* Added for contrast */
+  }
+
+
+#weather-icon::before {
+    content: "" / "Sunny Weather Icon";
+    background-image: url("../images/sunny.png");
+    width: 30px;
+    height: 30px;
+
+  }
+
+  /* Force the data list below the heading/icon */
+  .weather dl {
+    flex-basis: 100%;
+    margin-top: 10px;
+    text-align: left; /* Usually easier to read for lists */
+  }
+
+
+}

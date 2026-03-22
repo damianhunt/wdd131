@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Damian Hunt's W03 Assignment: Country Page">
+    <meta name="author" content="Damian Hunt">
+    <link rel="stylesheet" href="styles/country.css">
+    <link rel="stylesheet" href="styles/country-large.css">
+
+    
+    <title>W03 Assignment: Country Page</title>
+</head>
+<body>
+    <header id="country-name">
+            <h1>South Africa</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cape-town-south-africa-large.webp" media="(min-width: 1000px)" alt="Cape Town South Africa" width="1500" height="750">
+                <source srcset="images/cape-town-south-africa-medium.webp" media="(min-width: 500px) " alt="Cape Town South Africa" width="1000" height="500">
+                <img src="images/shoreline-south-africa-small.webp" fetchpriority=high alt="Shoreline South Africa" width="400" height="600">
+            </picture>
+        </div>
+
+        <section class="data">
+            <div class="data-title-bar">
+                <h2>Data</h2>
+            </div>
+            <dl>
+            <dt>Population:</dt>
+            <dd>63 million</dd>
+            <dt>Capital Cities:</dt>
+            <dd>Pretoria (administrative)</dd>
+            <dt>Official Languages:</dt>
+            <dd>11</dd>
+            <dt>Currency:</dt>
+            <dd>South African Rand</dd>
+            <dt>Time Zone:</dt>
+            <dd>UTC+2</dd>
+            <dt>Calling code:</dt>
+            <dd>+27</dd>
+            <dt>Internet TLD:</dt>
+            <dd>.za</dd>
+            </dl>
+        </section>  
+
+        <section class="weather">
+            <div class="weather-title-bar">
+                <h2>Weather</h2>
+                <div id="weather-icon"></div>
+            </div>
+
+            <dl>
+            <dt>Temperature:</dt>
+            <dd><span id="temp">20</span>°C</dd>
+            <dt>Conditions:</dt>
+            <dd>Sunny</dd>
+            <dt>Humidity:</dt>
+            <dd>60%</dd>
+            <dt>Wind Speed:</dt>
+            <dd><span id="windSpeed">15</span> km/h</dd>
+            <dt>Wind Chill:</dt>
+            <dd><span id="windChill"></span>°C</dd>
+            </dl>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="year"></span>| Damian Hunt | South Africa<br>  
+            Last Modified:<span id="lastModified"></span><br>
+        </p>
+</footer>
+    
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</body>
+</html>
