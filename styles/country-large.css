@@ -7,7 +7,7 @@
     --secondary-color: rgb(202, 178, 45); /* Global scope */
     --third-color: rgb(0, 16, 189); /* Global scope */
     --fourth-color: rgb(189, 0, 0); /* Global scope */
-    --fith-color: black; /* Global scope */
+    --fith-color: rgb(0, 0, 0); /* Global scope */
     text-align: center;
     
 }
@@ -61,7 +61,7 @@
     background-color: rgba(1, 95, 1, 0.7); /* Your green background */
     padding: 10px;
     border-radius: 10px; /* Rounds the top corners only */
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -69,7 +69,7 @@
     margin: 10px;
     padding: 5px 10px;
     border-radius: 5px;
-    color: white; /* Added for contrast */
+    color: rgb(255, 255, 255); /* Added for contrast */
     text-align: left;
   }
 
@@ -103,12 +103,12 @@
     background-color: rgba(1, 95, 1, 0.7); /* Your green background */
     padding: 10px;
     border-radius: 10px; /* Rounds the top corners only */
-    color: white;
+    color: rgb(255, 255, 255);
 }
   
 
   .weather h2 {
-    color: white; /* Added for contrast */
+    color: rgb(255, 255, 255); /* Added for contrast */
   }
 
 #weather-icon::before,

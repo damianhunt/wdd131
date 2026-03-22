@@ -5,7 +5,7 @@
     --secondary-color: rgb(202, 178, 45); /* Global scope */
     --third-color: rgb(0, 16, 189); /* Global scope */
     --fourth-color: rgb(189, 0, 0); /* Global scope */
-    --fith-color: black; /* Global scope */
+    --fith-color: rgb(0, 0, 0); /* Global scope */
     text-align: center;
     
 }
@@ -14,7 +14,7 @@
 	text-align: center;
 	background-color: var(--primary-color);
 	padding: 0.5rem;
-	color: #fff;
+	color: rgb(255, 255, 255);
     border-bottom: 10px solid var(--fith-color) ;  
 }
 
@@ -82,6 +82,6 @@ footer {
   border-top: 10px solid var(--fith-color) ; 
   padding: 5px;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
