@@ -108,12 +108,11 @@
   
 
   .weather h2 {
-    background-color: none;
     color: white; /* Added for contrast */
   }
 
-
-#weather-icon::before {
+#weather-icon::before,
+#weather-icon::after {
     content: "" / "Sunny Weather Icon";
     background-image: url("../images/sunny.png");
     width: 30px;

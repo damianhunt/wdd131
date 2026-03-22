@@ -39,7 +39,6 @@ main {
   height: auto;
   border-bottom: 10px solid var(--secondary-color) ;
 }
-
 #weather-icon::before {
     content: "" / "Sunny Weather Icon";
     display: inline-block;
@@ -52,6 +51,12 @@ main {
     background-repeat: no-repeat;
   }
 
+  #weather-icon::after{
+  content: "" / "Sunny Weather Icon";
+    background-image: url("../images/sunny.png");
+    width: 30px;
+    height: 30px;
+  }
 
 dl {
     display: grid;
