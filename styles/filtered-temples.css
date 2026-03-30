@@ -29,7 +29,6 @@ body {
 }
 
 nav {
-	
 	background-color: rgb(51, 51, 51);
 	border: 1px solid rgb(0 0 0 / .2);
 }
@@ -45,6 +44,12 @@ nav {
 .navigation li {
 	display: none;
 }
+
+.navigation.show li {
+    display: block; /* Shows the list items */
+    width: 100%;    /* Ensures they span the full width of the column */
+}
+
 .navigation a {
 	display: block;
 	padding: 0.75rem;
