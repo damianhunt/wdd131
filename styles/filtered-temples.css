@@ -7,7 +7,6 @@ body {
 	text-align: center;
 	background-color: rgb(0 110 182 / 1);
 	border: 1px solid rgb(0 0 0 / .2);
-	padding: 0.5rem;
 	color: #fff;
 	font-size: 2rem;
 }
@@ -45,7 +44,8 @@ nav {
 	display: none;
 }
 .navigation a {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	padding: 0.75rem;
 	text-align: center;
 	text-decoration: none;
