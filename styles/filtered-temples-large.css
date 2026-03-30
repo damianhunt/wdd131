@@ -17,13 +17,4 @@
 		display: none;
 	}
 
-    .temples {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-		justify-content: center;
-		gap: 20px;
-
-    }
-	.temple-card {
-		max-width: 400px;
-	}
 }
