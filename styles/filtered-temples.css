@@ -33,22 +33,14 @@ nav {
 	border: 1px solid rgb(0 0 0 / .2);
 }
 .navigation {
+	display: flex; 
+	flex-direction: column;
 	list-style: none;
 	margin: 0 auto;
 	max-width: 760px;
 	padding: 0px;
 	
 }
-
-nav ul {
-    display: flex; 
-	flex-direction: column;          /* Enables flexbox for the list items */
-    list-style-type: none;   /* Removes the default bullets */
-    margin: 0;
-    padding: 0;
-    justify-content: center; /* Centers items (optional: use space-around for even spacing) */
-}
-
 
 .navigation li {
 	display: none;
