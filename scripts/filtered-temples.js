@@ -158,6 +158,7 @@ function createTempleCard(filteredTemples) {
 	document.querySelector(".temples").innerHTML = "";
 	filteredTemples.forEach((temple) => {
 		let card = document.createElement("section");
+		card.classList.add("temple-card");
 		let name = document.createElement("h3");
 		let location = document.createElement("p");
 		let dedicated = document.createElement("p");
