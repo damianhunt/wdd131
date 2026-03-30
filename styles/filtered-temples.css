@@ -40,6 +40,16 @@ nav {
 	
 }
 
+nav ul {
+    display: flex; 
+	flex-direction: column;          /* Enables flexbox for the list items */
+    list-style-type: none;   /* Removes the default bullets */
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centers items (optional: use space-around for even spacing) */
+}
+
+
 .navigation li {
 	display: none;
 }
@@ -54,7 +64,6 @@ nav {
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 	border: 1px solid rgb(0 0 0 / .2);
-	transition: background-color 0.3s ease;
 }
 
 .navigation a:hover,
@@ -65,6 +74,7 @@ nav {
 
 .show li {
 	display: block;
+	align-items: center;
 }
 
 #menu.show::before {
@@ -82,12 +92,8 @@ h1 {
 	padding: 0.5rem;
 }
 
-
-
-
 .temples {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         align-items: center;
         width: 90%;
         margin: 0px auto;
@@ -110,13 +116,13 @@ h1 {
 	height: 250px;
 	border-radius: 5px;
 	margin-top: 10px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgb(0,0,0,0.2);
 }
     
 footer {
   background-color: rgb(0 110 182 / 1);
   padding: 5px;
   text-align: center;
-  color: white;
+  color: rgb(255 255 255);
   font-size: 1.5rem;
 }
