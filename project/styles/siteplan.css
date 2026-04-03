@@ -14,7 +14,7 @@ header {
 	text-align: center;
 	background-color: rgb(0 110 182 / 1);
 	border: 1px solid rgb(0 0 0 / .2);
-	padding: 0.5rem;
+	padding: 5px;
 	color: #fff;
     border: 10px solid var(--secondary-color)
 }
@@ -36,7 +36,7 @@ section {
     padding: 0px;
 	text-align: center;
 	background-color: var(--primary-color);
-	padding: 0.5rem;
+	padding: 5px;
 	color: rgb(255, 255, 255);
     border-bottom: 10px solid var(--secondary-color) ;  
 }
