@@ -1,0 +1,58 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    --primary-color: rgb(0 110 182 / 1); /* Global scope */
+    --secondary-color: rgb(200, 200, 200); /* Global scope */
+    --third-color: rgb(255, 255, 255); /* Global scope */
+    --fourth-color: rgb(0, 0, 0); /* Global scope */
+    text-align: center;
+    
+}
+
+header {
+	text-align: center;
+	background-color: rgb(0 110 182 / 1);
+	border: 1px solid rgb(0 0 0 / .2);
+	padding: 0.5rem;
+	color: #fff;
+    border: 10px solid var(--secondary-color)
+}
+
+h1 {
+	font-size: 40px;
+}
+
+main {
+	margin: 0px 0px;
+	padding: 0px;
+	display: grid;
+    border-left: 10px solid var(--secondary-color) ; 
+    border-right: 10px solid var(--secondary-color) ;
+
+}
+
+section {
+    margin: 0px 0px;
+    padding: 0px;
+	text-align: center;
+	background-color: var(--primary-color);
+	padding: 0.5rem;
+	color: rgb(255, 255, 255);
+    border-bottom: 10px solid var(--secondary-color) ;  
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  border: 10px solid var(--secondary-color) ; 
+  border-top: none;
+  padding: 5px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
