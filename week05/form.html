@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Damian Hunt's Assignment for W05 Assignment: Product Review Form.">
+    <meta name="author" content="Damian Hunt">
+    <title>W05 Assignment: Product Review Form - Damian Hunt</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+</head>
+<body>
+    <header id="page-title">Product Review</header>
+
+    <main>
+
+
+        <form method="get" action="review.html" class="review">
+        
+        <fieldset>
+            <fieldset>
+            <legend>Product Information</legend>
+            <label> Product Name
+                <select id="product" name="product" required>
+                <option value="">Choose a Product &#9662;</option>                    
+                </select>
+                </label>
+        </fieldset>
+        
+        <fieldset>
+            
+            <div>Overall Rating</div>
+            <div class="rating">
+                    <label for="fivestar"></label><input type="radio" id="fivestar" name="rating" value="1" required>
+                    <label for="fourstar"></label><input type="radio" id="fourstar" name="rating" value="2" required>
+                    <label for="threestar"></label><input type="radio" id="threestar" name="rating" value="3" required>
+                    <label for="twostar"></label><input type="radio" id="twostar" name="rating" value="4" required>
+                    <label for="onestar"></label><input type="radio" id="onestar" name="rating" value="5" required>
+                </div>
+        </fieldset>
+            
+        <fieldset>
+        <label>Date of Installation:</label>
+        <input type="date" name="completed date" required>
+
+        <div>Which Features did you find useful in the product?</div>
+            <span>Check all that apply</span>
+            <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" name="ease" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+            <label><input type="checkbox" name="design" value="yes"> Design</label>
+        </fieldset>
+
+        <fieldset>
+        <div>Written Review <span id="optional">(Optional)</span>:</div>
+        <textarea name="review" id="review" rows="4" cols="50"></textarea>
+
+        <div>Your Name <span id="optional">(Optional)</span>:</div>
+        <input type="name" name="name" id="name">
+        </fieldset>
+
+        <input type="submit" value="Post Review">
+        </fieldset>
+    </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="year"></span>| Damian Hunt | South Africa<br>  
+            Last Modified:<span id="lastModified"></span><br>
+        </p>
+    </footer>
+</body>
+</html>
