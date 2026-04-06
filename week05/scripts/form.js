@@ -28,19 +28,7 @@ const products = [
 
 // Populate the product dropdown
 
-//const selectElement = document.getElementById("product-name");
-
-// 1. Create the label element
-const label = document.createElement("label");
-
-// 2. Link it to the select element's ID
-label.setAttribute("for", "product-name"); 
-
-// 3. Set the visible text for the label
-label.textContent = "Select Product: ";
-
-// 4. Insert the label into the DOM (before the select menu)
-selectElement.before(label); 
+const selectElement = document.getElementById("product-name");
 
 products.forEach(product => {
   let option = document.createElement("option");

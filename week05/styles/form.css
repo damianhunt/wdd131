@@ -12,9 +12,8 @@ body {
 }
 
 main {
-	display: block;
-    margin: 0px 0px;
-    
+    padding: 0 2%;
+    min-height: 20rem;
 }
 
 .review fieldset{
@@ -57,6 +56,12 @@ main {
     width: 100%;
     max-width: 400px;
     appearance: none;
+}
+
+.review input[type="radio"],
+.review input[type="checkbox"] {
+    margin-right: 6px;
+    padding: 5px;
 }
 
 .review input[type="submit"] {

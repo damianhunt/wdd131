@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Damian Hunt's Assignment for W05 Assignment: Product Review Form.">
+    <meta name="description" content="Damian Hunt's Assignment for W05 Assignment: Product Review Form. 
+    This form allows users to submit a review for a product, including a rating, features they found useful, and an optional written review.">
     <meta name="author" content="Damian Hunt">
     <title>W05 Assignment: Product Review Form - Damian Hunt</title>
 
@@ -24,7 +25,7 @@
         <fieldset>
             <legend>Product Information</legend>
             <fieldset>
-            <div>Product Name</div>
+            <label for="product-name"> Product Name</label>
                 <select id="product-name" name="product" required>
                 <option value="" disabled selected>Select a Product &#9662;</option>                    
                 </select>
@@ -54,32 +55,33 @@
             
         <fieldset>
         
-        <div>Date of Installation</div>
-        <input type="date" id="completed-date" name="completed-date" required>
+            <label for="completed-date">Date of Installation</label>
+            <input type="date" id="completed-date" name="completed-date" required>
         </fieldset>
 
         <fieldset>
         <div>Which Features did you find useful in the product?</div>
-            <span id="check">(Check all that apply)</span>
+            <p id="check">(Check all that apply)</p>
 
-            <label for="durability">Durability</label>
             <input type="checkbox" id="durability" name="features" value="durability">
+            <label for="durability">Durability</label>
             
-            <label for="ease">Ease of Use</label>
             <input type="checkbox" id="ease" name="features" value="ease">
+            <label for="ease">Ease of Use</label>
             
-            <label for="performance">Performance</label>
             <input type="checkbox" id="performance" name="features" value="performance">
+            <label for="performance">Performance</label>
             
-            <label for="design">Design</label>
             <input type="checkbox" id="design" name="features" value="design">
+            <label for="design">Design</label>
+
         </fieldset>
 
         <fieldset>
-        <div>Written Review <span>(Optional)</span></div>
+        <label for="review">Written Review <span>(Optional)</span></label>
         <textarea name="review" id="review" rows="4" cols="50"></textarea>
 
-        <div>Your Name <span >(Optional)</span>:</div>
+        <label for="user-name">Your Name <span >(Optional)</span>:</label>
         <input type="text" id="user-name" name="name">
         </fieldset>
 
