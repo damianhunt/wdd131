@@ -34,6 +34,7 @@ products.forEach(product => {
   let option = document.createElement("option");
   option.value = product.id;     // Use id for the value field
   option.textContent = product.name; // Use name for the display
+  option.setAttribute("data-averagerating", product.averagerating); // Store average rating as a data attribute
   selectElement.appendChild(option);
 });
 
