@@ -36,12 +36,14 @@ main {
 }
 
 .review div {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     color: #445ba9;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .review input[type="name"],
+.review input[type="text"],
 .review input[type="date"],
 .review textarea,
 .review select
