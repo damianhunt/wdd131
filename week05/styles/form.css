@@ -125,6 +125,10 @@ main {
   content:'\2605';
 }
 
+#check {
+  font-style: italic;
+}
+
 
 footer {
   background-color: rgb(0 110 182 / 1);
