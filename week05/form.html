@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
-    scr
 
 </head>
+
 <body>
     <header id="page-title">Product Review</header>
 
@@ -24,11 +24,10 @@
         <fieldset>
             <fieldset>
             <legend>Product Information</legend>
-            <label> Product Name
+            <label> Product Name</label>
                 <select id="product-name" name="product" required>
                 <option value="" disabled selected>Choose a Product &#9662;</option>                    
                 </select>
-                </label>
         </fieldset>
         
         <fieldset>
@@ -45,11 +44,12 @@
             
         <fieldset>
         <div>Date of Installation:</div>
-        <input type="date" name="completed date" required>
+        <label for="completed-date"></label>
+        <input type="date" id="completed-date" name="completed-date" required>
 
         <div>Which Features did you find useful in the product?</div>
             <label>Check all that apply</label>
-            
+
             <input type="checkbox" id="durability" name="features" value="durability">
             <label for="durability">Durability</label>
 
@@ -64,11 +64,11 @@
         </fieldset>
 
         <fieldset>
-        <div>Written Review <span >(Optional)</span>:</div>
+        <label for="review">Written Review <span>(Optional)</span></label>
         <textarea name="review" id="review" rows="4" cols="50"></textarea>
 
-        <div>Your Name <span >(Optional)</span>:</div>
-        <input type="text" name="name" id="name">
+        <label for="user-name">Your Name <span >(Optional)</span>:</label>
+        <input type="text" id="user-name" name="name">
         </fieldset>
 
         <input type="submit" value="Post Review">
