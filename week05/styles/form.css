@@ -90,7 +90,8 @@ main {
 }
 /* hide the inputs */
 .rating input {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 /* set properties of all labels */
 .rating > label {
