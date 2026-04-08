@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W06 Project - Damian Hunt</title>
+    <meta name="description" content="Damian Hunt's W06 Project - ">
+    <meta name="author" content="Damian Hunt">
+    <link rel="stylesheet" href="styles/multico.css">
+    <link rel="stylesheet" href="styles/multico-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/functions.js" defer></script>
+
+</head>
+<body>
+
+    <header id="page-title">
+        <img class="logo" src="images/logo.webp" fetchpriority=high alt="MultiCo Solutions Logo">
+    </header>
+    <a id="menu" ></a>
+<nav>
+	<ul class="navigation">
+		<li><a href="index.html" title="Home page">Home</a></li>
+		<li><a href="products.html" title="Products Page">Products</a></li>
+		<li><a href="contact.html" title="Contact Page">Contact</a></li>
+	</ul>
+</nav>
+
+<main>
+        
+    <form method="get" action="process.html" class="process">
+        
+        <fieldset>
+            <legend>Customer Information</legend>
+                <label>Name* <input type="text" name="name" required></label>
+                <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Company Name <input type="text" name="companyname"></label>
+        </fieldset>
+            
+        <fieldset>
+                    <label> Industry
+                            <select name="industry">
+                                <option value="">Please select... &#9662;</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="public-safety">Public Safety</option>
+                                <option value="business">Business and Enterprise</option>
+                                <option value="utilities">Utilities</option>
+                                <option value="security">Private Security</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+
+                    </fieldset>
+
+        <fieldset>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+        
+
+</main>
+    
+<footer>
+        <p>
+            &copy;<span id="year"></span>| Damian Hunt | South Africa<br>  
+            Last Modified:<span id="lastModified"></span><br>
+        </p>
+</footer>
+
+</body>
+</html>
