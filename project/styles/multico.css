@@ -1,13 +1,14 @@
 /* Mobile View ***************/
 
 :root {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica,;
     font-size: 16px;
     --primary-color: rgb(0 110 182 / 1); /* Global scope */
-    --secondary-color: rgb(100, 100, 100); /* Global scope */
+    --secondary-color: rgb(247, 248, 248); /* Global scope */
     --third-color: rgb(255, 255, 255); /* Global scope */
     --fourth-color: rgb(0, 0, 0); /* Global scope */
-    text-align: center;
+	font-size: 0.9rem;
+	font-weight: 200;
     
 }
 
@@ -33,7 +34,7 @@ header {
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
 	background-color: var(--secondary-color);
-	color: #fff;
+	color: var(--primary-color);
 	text-align: center;
 	border: 1px solid rgb(0 0 0 / .2);
 }
@@ -62,7 +63,7 @@ nav {
 	padding: 0.75rem;
 	text-align: center;
 	text-decoration: none;
-	color: white;
+	color: var(--primary-color);
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -89,29 +90,28 @@ main {
 	display: block;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 0.5rem;
+	padding: 0px;
 }
 
-h1 {
+h1,h2 {
 	text-align: center;
 	padding: 0.5rem;
 }
 
 .hero {
-	display: grid;
+	display: block;
+	background-color: var(--secondary-color);
+	
 }
 
-.radio {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        align-items: center;
-        width: 90%;
-        margin: 0px auto;
-        padding: 10px;
-    }
-
+a {
+    text-decoration: none;
+	color: var(--fourth-color);
+}
 
 figure img {
+	display: block;
+  	margin: auto;
 	aspect-ratio: 300 / 200;
     width: 100%;
     border-radius: 10px;
@@ -122,6 +122,10 @@ figcaption {
 	text-align: center;
 	margin-top: 10px;
 	font-size: 1.2rem;
+}
+
+.radios{
+	display: block;
 }
 
 /* Footer ***************/

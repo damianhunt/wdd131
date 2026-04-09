@@ -1,5 +1,17 @@
 
 @media  screen and (min-width: 500px) {
+
+	:root {
+    font-family: sans-serif, Arial, Helvetica,;
+    font-size: 16px;
+    --primary-color: rgb(0 110 182 / 1); /* Global scope */
+    --secondary-color: rgb(247, 248, 248); /* Global scope */
+    --third-color: rgb(255, 255, 255); /* Global scope */
+    --fourth-color: rgb(0, 0, 0); /* Global scope */
+	font-size: 0.9rem;
+	font-weight: 200;
+    
+}
     
     .navigation {
 		display: flex;
@@ -15,13 +27,67 @@
 	#menu {
 		display: none;
 	}
-}
-    .temples {
+
+    .radios {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
         align-items: center;
         width: 90%;
         margin: 0px auto;
         padding: 10px;
     }
 
+	.products{
+		display: grid;
+		row-gap: 100px;
+	}
+
+	div{
+		display: grid;
+		padding: 10px;
+		background-color: var(--secondary-color);
+	}
+
+	.ptt-hero {
+		grid-column: 1/5;
+		grid-row: 1/2;
+		margin: 100px auto;
+	}
+
+	.p30-lite-word {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.p30-lite-image {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+
+	.p30-word {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	.p30-image {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+
+	.p50-word {
+		grid-column: 1/2;
+		grid-row: 4/5;
+	}
+	.p50-image {
+		grid-column: 2/3;
+		grid-row: 4/5;
+	}
+
+	.pnc360s-word {
+		grid-column: 2/3;
+		grid-row: 5/6;
+	}
+	.pnc360s-image {
+		grid-column: 1/2;
+		grid-row: 5/6;
+	}
+
+}
