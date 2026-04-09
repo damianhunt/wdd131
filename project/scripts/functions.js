@@ -21,3 +21,53 @@ window.addEventListener("load", () => {
   
   console.log(`Total customers made contact: ${contactedCount}`);
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const heroData = [
+        { id: 'hero-1', isActive: true, img: "url('image1.jpg')" },
+        { id: 'hero-2', isActive: false, img: "url('image2.jpg')" }
+    ];
+
+    let intervalId; // Variable to store our timer reference
+
+    function updateDOM() {
+        heroData.forEach(hero => {
+            const el = document.getElementById(hero.id);
+            if (el) {
+                el.style.display = hero.isActive ? 'block' : 'none';
+                el.style.backgroundImage = hero.img; // Ensures image updates
+            }
+        });
+    }
+
+    function cycleHeroes() {
+        // Simple array-based toggle logic
+        heroData.forEach(hero => hero.isActive = !hero.isActive);
+        updateDOM();
+    }
+
+    function startTimer() {
+        // Clear any existing timer before starting a new one
+        if (intervalId) clearInterval(intervalId);
+        intervalId = setInterval(cycleHeroes, 7000); 
+    }
+
+    // 1. Set up Manual Click: Attach to the parent container or individual divs
+    heroData.forEach(hero => {
+        const el = document.getElementById(hero.id);
+        if (el) {
+            el.addEventListener('click', () => {
+                cycleHeroes(); // Manual switch
+                startTimer();  // Reset the 10s countdown
+            });
+            // Add a pointer cursor so users know it's clickable
+            el.style.cursor = 'pointer';
+        }
+    });
+
+    // 2. Start initial timer and DOM state
+    updateDOM();
+    startTimer();
+});
