@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
 
     if (contactForm) {
 
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", () => {
     // Retrieve existing count or default to 0
     let contactedCount = Number(localStorage.getItem("contacted-counter")) || 0;
   
@@ -26,7 +26,8 @@ window.addEventListener("load", () => {
     localStorage.setItem("contacted-counter", contactedCount);
   
     console.log(`Total customers made contact: ${contactedCount}`);
-    }}
+    });
+    }
 });
 
 
