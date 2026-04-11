@@ -2,9 +2,9 @@
 @media  screen and (min-width: 500px) {
 
 	:root {
-    font-family: sans-serif, Arial, Helvetica,;
+    font-family: sans-serif, Arial, Helvetica;
     font-size: 16px;
-    --primary-color: rgb(0 110 182 / 1); /* Global scope */
+    --primary-color: rgb(0, 110, 182, 1); /* Global scope */
     --secondary-color: rgb(247, 248, 248); /* Global scope */
     --third-color: rgb(255, 255, 255); /* Global scope */
     --fourth-color: rgb(0, 0, 0); /* Global scope */
