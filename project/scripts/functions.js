@@ -26,8 +26,8 @@ window.addEventListener("load", () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const heroData = [
-        { id: 'hero-1', isActive: true, img: "url('image1.jpg')" },
-        { id: 'hero-2', isActive: false, img: "url('image2.jpg')" }
+        { id: 'hero-1', isActive: true},
+        { id: 'hero-2', isActive: false }
     ];
 
     let intervalId; // Variable to store our timer reference
