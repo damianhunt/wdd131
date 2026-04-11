@@ -138,3 +138,73 @@ footer {
   color: white;
   font-size: 1.5rem;
 }
+
+/* Contact - Form ***************/
+
+.contact fieldset{
+    margin: 2rem 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+}
+
+.contact legend {
+    color: #445ba9;
+    padding: 0 0.5rem;
+}
+
+.contact label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.contact div {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #445ba9;
+    font-size: 1rem;
+}
+
+.contact input[type="name"],
+.contact input[type="text"],
+.contact input[type="date"],
+.contact textarea,
+.contact select
+{
+    background-color: var(--secondary-color);
+    display: block;
+    border: solid 1px var(--fourth-color);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.contact input[type="radio"],
+.contact input[type="checkbox"] {
+    margin-right: 6px;
+    padding: 5px;
+}
+
+.contact input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: .75rem 1.5rem;
+    font-size: .9rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    cursor: pointer;
+}
+
+.contact input:required {
+    border-bottom: solid 4px #9c2c13;
+}
+
+.contact input:required:valid {
+    border-bottom: solid 4px #006f02;
+}
