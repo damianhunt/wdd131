@@ -15,15 +15,22 @@
 /* Header ***************/
 
 header {
+	display: flex;
+	flex-direction: column;
 	background-color: var(--primary-color);
 	border: 1px solid rgb(0 0 0 / .2);
 	padding: 0px;
+	justify-content: center;
+  	align-items: center;
+	
 }
 
 .logo {
 	height: 100px;
+	max-width: 100px;
 	margin: 0px;
 	padding: 0px;
+	
 	
 }
 
@@ -47,6 +54,7 @@ header {
 nav {
 	background-color: var(--primary-color);
 	border: 1px solid rgb(0 0 0 / .2);
+	width: 100%;
 }
 .navigation {
 	list-style: none;
